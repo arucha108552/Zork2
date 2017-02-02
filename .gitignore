@@ -1,0 +1,10 @@
+/.idea
+/target
+/*.DS_Store
+/src/test/java/.DS_Store
+/src/test/java/io/.DS_Store
+/src/test/java/io/muic/.DS_Store
+/src/test/java/io/muic/ooc/.DS_Store
+/src/test/java/io/muic/ooc/thienthai/.DS_Store
+/src/.DS_Store
+/src/test/.DS_Store
