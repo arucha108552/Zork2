@@ -61,19 +61,23 @@ public class startGame {
         runLvl(posOb,map,myStatus,level);
 
         // TEST FOR LVL2
-        level = 2;
-        System.out.println("### After you know that the cure is in the radiation center you reach on the entrance ###");
-        System.out.println("you: I have to find a way to get in there on my west side have someone there I should ask him");
-        map = new Map(level,myStatus);
-        posOb = map.getStartingPoint();
-        runLvl(posOb,map,myStatus,level);
+        if(myStatus.getLvc() == 2) {
+            level = 2;
+            System.out.println("### After you know that the cure is in the radiation center you reach on the entrance ###");
+            System.out.println("you: I have to find a way to get in there on my west side have someone there I should ask him");
+            map = new Map(level, myStatus);
+            posOb = map.getStartingPoint();
+            runLvl(posOb, map, myStatus, level);
+        }
 
         // TEST FOR LVL3
-        level = 3;
-        System.out.println("you: finally im can access to radition center oh someone on the north side may be he can help me");
-        map = new Map(level,myStatus);
-        posOb = map.getStartingPoint();
-        runLvl(posOb,map,myStatus,level);
+        if(myStatus.getLvc() == 3) {
+            level = 3;
+            System.out.println("you: finally im can access to radition center oh someone on the north side may be he can help me");
+            map = new Map(level, myStatus);
+            posOb = map.getStartingPoint();
+            runLvl(posOb, map, myStatus, level);
+        }
 
     }
 
